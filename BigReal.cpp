@@ -6,7 +6,19 @@ using namespace std;
 
 BigReal::BigReal(string realnumber){
     number = realnumber;
+    int decimal_pos;
+    for (int i = 0 ; i < size ; i++){
+        if ( number[i] == '.' ){
+            decimal_pos=i;
+          break ;
+        }
+        integer += number[i] ;
+    }
+    for (int j=decimal_pos+1 ; j<size ; j++){
+        fraction += number[j] ;
+    }
 }
+
 bool BigReal::isvalid() {
     char point='.';
     char space =' ';
@@ -20,5 +32,16 @@ bool BigReal::isvalid() {
         return (false) ;
     }
     return (true);
+}
+//void BigReal::set_decimal_point (string number){
+//    for (int i=0;i<number.size();i++){
+//        if (number[i]=='.'){
+//            decimal_pos=i;
+//        }
+//    }
+//}
+void BigReal::print(){
+    cout << sign;
+    cout <<
 }
 
