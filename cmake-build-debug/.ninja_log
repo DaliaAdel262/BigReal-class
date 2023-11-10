@@ -1,0 +1,7 @@
+# ninja log v5
+3	520	7209473984340589	build.ninja	b1502e36d33c3314
+10	12088	7209474108005406	CMakeFiles/assignment_model_answer.dir/main.cpp.obj	d33224f22b6a94d3
+30	12101	7209474108125086	CMakeFiles/assignment_model_answer.dir/BigReal.cpp.obj	7f04524206a72000
+12101	19249	7209474179421409	assignment_model_answer.exe	797d2236454a7371
+6	6605	7209477857325955	CMakeFiles/assignment_model_answer.dir/main.cpp.obj	d33224f22b6a94d3
+6606	11248	7209477903751790	assignment_model_answer.exe	797d2236454a7371

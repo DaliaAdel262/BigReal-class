@@ -1,29 +1,54 @@
 
 
-#ifndef A2_GROUPB_S8_20220516_20220424_BIGREAL_H
-#define A2_GROUPB_S8_20220516_20220424_BIGREAL_H
+#ifndef LETS_TRY_BIGREAL_H
+#define LETS_TRY_BIGREAL_H
 
-#include <bits/stdc++.h>
+#include <iostream>
+#include <string>
+#include <vector>
+#include <iostream>
+#include <fstream>
+#include <istream>
+#include <ostream>
+#include <deque>
+#include <map>
+#include <set>
+#include <cmath>
+#include <math.h>
+#include <algorithm>
+#include <regex>
 using namespace std;
-class BigReal {
+
+
+class BigReal{
 private:
     string number;
-    char sign=number[0];
-    int size=number.size();
-    string integer;
-    string fraction;
-    char decimal = '.';
+    char signNumber;
+    bool checkValidInput(string input);
+
 public:
-    BigReal(string realnumber);
-    bool isvalid();
-    void set_sign();
-    BigReal operator= (BigReal& other);
-    BigReal operator+ (BigReal& other);
-    BigReal operator- (BigReal& other);
-    bool operator< (BigReal& other);
-    bool operator> (BigReal& other);
-    void print();
+    bool operator < (const BigReal& anotherDec);
+    bool operator > (const BigReal& anotherDec);
+    bool operator == (const BigReal anotherDec);
+    BigReal& operator = (BigReal anotherDec);
+    BigReal operator + (BigReal number2);
+    BigReal operator - (BigReal anotherDec);
+    friend ostream &operator << (ostream &out, BigReal num);
+    int size();
+    int sign();
+    void setNumber(string num);
+    string getNumber(){
+        return number;
+    }
+
+    BigReal(){}
+    BigReal(string num)
+    {
+        setNumber(num);
+    }
+
 };
 
 
-#endif //A2_GROUPB_S8_20220516_20220424_BIGREAL_H
+
+#endif //LETS_TRY_BIGREAL_H

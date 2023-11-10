@@ -1,0 +1,3 @@
+C:/Users/DELL/Desktop/oop-assigment-2/cmake-build-debug/CMakeFiles/assignment_model_answer.dir
+C:/Users/DELL/Desktop/oop-assigment-2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/DELL/Desktop/oop-assigment-2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
